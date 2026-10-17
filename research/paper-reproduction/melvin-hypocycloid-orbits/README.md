@@ -31,29 +31,29 @@ The completed reproduction includes:
 
 The scan uses the cusp construction with
 
-\[
+```math
 P=0,\qquad r_+=r_*,
-\]
+```
 
 together with
 
-\[
+```math
 L=\frac{eBr_*^2}{2\Lambda_*},
 \qquad
 E=\Lambda_*,
-\]
+```
 
 and the weak-field reference charge
 
-\[
+```math
 e_n=\frac{n-2}{\sqrt{2(n-1)}}.
-\]
+```
 
 The scan retains candidates satisfying the weak-field control condition
 
-\[
+```math
 e^2B^2 \leq 10^{-5}.
-\]
+```
 
 For the constrained scan:
 
@@ -68,18 +68,18 @@ These are high-accuracy numerical results, not a proof of exact analytic hypocyc
 
 The project also investigates a parameterized family of deformed closed trajectories.
 
-For fixed cusp number `n` and outer cusp radius `r_*`, the magnetic field `B` is treated as a control parameter. The charge is adjusted numerically to satisfy
+For fixed cusp number $n$ and outer cusp radius $r_*$, the magnetic field $B$ is treated as a control parameter. The charge is adjusted numerically to satisfy
 
-\[
+```math
 \Delta\phi=\frac{2\pi}{n}.
-\]
+```
 
 This defines a numerical family
 
-\[
+```math
 B\longmapsto
 \bigl(e(B),L(B),E(B),r_-(B),\text{orbit}(B)\bigr).
-\]
+```
 
 This is a numerical continuation framework, not a claimed closed-form analytic family of exact hypocycloids.
 
