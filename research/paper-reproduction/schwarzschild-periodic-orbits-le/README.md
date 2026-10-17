@@ -6,7 +6,7 @@ A completed reproduction and computational extension project based on:
 
 ## Overview
 
-This project reproduces the periodic-orbit framework for timelike Schwarzschild geodesics and studies its representation in angular-momentum–energy `(L, E)` parameter space.
+This project reproduces the periodic-orbit framework for timelike Schwarzschild geodesics and studies its representation in angular-momentum–energy $(L, E)$ parameter space.
 
 After reproducing the central orbital structure and generating the relevant figures, the project was extended through a broader brute-force numerical scan. The scan explores a wider range of parameters than the representative cases used in the initial reproduction.
 
@@ -14,15 +14,15 @@ After reproducing the central orbital structure and generating the relevant figu
 
 Periodic bound orbits are described by the rational quantity
 
-\[
+```math
 q=w+\frac{v}{z},
-\]
+```
 
-or equivalently by the integer triplet `(z, w, v)` together with orbital eccentricity.
+or equivalently by the integer triplet $(z, w, v)$ together with orbital eccentricity.
 
-- `z` is the number of leaves in the orbit;
-- `w` is the number of additional near-circular whirls;
-- `v` is the step size between successive leaves.
+- $z$ is the number of leaves in the orbit;
+- $w$ is the number of additional near-circular whirls;
+- $v$ is the step size between successive leaves.
 
 These labels distinguish different zoom–whirl orbit structures and provide a systematic way to organize periodic geodesics.
 
@@ -31,12 +31,12 @@ These labels distinguish different zoom–whirl orbit structures and provide a s
 The completed reproduction includes:
 
 - reconstruction of the periodic-orbit classification;
-- study of the relation between `(z, w, v)`, eccentricity, and the rational parameter `q`;
-- calculation of the conserved energy `E` and angular momentum `L` for periodic-orbit families;
-- reproduction of the structure of periodic orbits in `(L, E)` parameter space;
+- study of the relation between $(z, w, v)$, eccentricity, and the rational parameter $q$;
+- calculation of the conserved energy $E$ and angular momentum $L$ for periodic-orbit families;
+- reproduction of the structure of periodic orbits in $(L, E)$ parameter space;
 - generation of trajectory and parameter-space figures for visual validation.
 
-The reproduction confirms the central qualitative result that periodic-orbit families organize into characteristic structures in the `(L, E)` plane.
+The reproduction confirms the central qualitative result that periodic-orbit families organize into characteristic structures in the $(L, E)$ plane.
 
 ## Computational Extension
 
@@ -65,7 +65,7 @@ schwarzschild-periodic-orbits-le/
   notes/
 ```
 
-- `figures/` contains reproduced orbit and `(L, E)` parameter-space plots.
+- `figures/` contains reproduced orbit and $(L, E)$ parameter-space plots.
 - `src/` contains the numerical reproduction and brute-force scan code.
 - `data/` contains scan outputs or selected candidate data.
 - `notes/` contains derivations, parameter conventions, and validation notes.
