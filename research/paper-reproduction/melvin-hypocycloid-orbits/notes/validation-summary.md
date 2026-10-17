@@ -10,31 +10,31 @@ The calculation uses the full equations of motion, not only the weak-field appro
 
 For candidate hypocycloid-like orbits, the scan imposes the following conditions:
 
-- Motion is restricted to a plane by taking `P = 0`.
-- The selected outer radius is also the cusp position, `r_+ = r_*`.
+- Motion is restricted to a plane by taking $P = 0$.
+- The selected outer radius is also the cusp position, $r_+ = r_*$.
 - The cusp condition determines the angular momentum:
 
-\[
+```math
 L=\frac{eBr_*^2}{2\Lambda_*}.
-\]
+```
 
 - The radial constraint at the cusp determines the energy:
 
-\[
+```math
 E=\Lambda_*.
-\]
+```
 
 - The weak-field charge relation is used as the reference value:
 
-\[
+```math
 e_n=\frac{n-2}{\sqrt{2(n-1)}}.
-\]
+```
 
 - Candidates are retained only when
 
-\[
+```math
 e^2B^2 \leq 10^{-5}.
-\]
+```
 
 These constraints reduce the scan to physically relevant candidates instead of independently choosing every parameter.
 
@@ -46,20 +46,20 @@ Each numerical trajectory is converted to Cartesian coordinates and compared wit
 
 The measured geometric errors are:
 
-\[
+```math
 \mathrm{NRMS}=
 \frac{\sqrt{N^{-1}\sum_i d_i^2}}{r_+},
 \qquad
 \mathrm{NMAX}=
 \frac{\max_i d_i}{r_+},
-\]
+```
 
-where \(d_i\) is the distance from a numerical trajectory point to the reference hypocycloid.
+where $d_i$ is the distance from a numerical trajectory point to the reference hypocycloid.
 
 The selected acceptance thresholds are:
 
-- `NRMS <= 1e-3`
-- `NMAX <= 3e-3`
+- $NRMS <= 1e-3$
+- $NMAX <= 3e-3$
 
 The scan also records closure error and the residual of the radial constraint.
 
@@ -67,21 +67,21 @@ The scan also records closure error and the residual of the radial constraint.
 
 | Parameter | Values |
 | --- | --- |
-| Magnetic field `B` | 0.0005, 0.001, 0.002, 0.003 |
-| Outer radius `r_*` | 4, 6, 8 |
-| Cusp number `n` | 3, 4, 5, 6 |
-| Charge | `e_n(1-0.02)`, `e_n`, `e_n(1+0.02)` |
-| Longitudinal momentum `P` | 0 |
+| Magnetic field $B$ | 0.0005, 0.001, 0.002, 0.003 |
+| Outer radius $r_*$ | 4, 6, 8 |
+| Cusp number $n$ | 3, 4, 5, 6 |
+| Charge | $e_n(1-0.02)$, $e_n$, $e_n(1+0.02)$ |
+| Longitudinal momentum $P$ | 0 |
 
 After applying the weak-field control condition, the scan contains 129 candidates.
 
 ## Results
 
 - 42 of 129 constrained candidates passed the selected geometric thresholds.
-- The accepted cases used the theoretical weak-field charge value `e = e_n`.
+- The accepted cases used the theoretical weak-field charge value $e = e_n$.
 - In this scan, charge values shifted by plus or minus 2% did not pass the same strict geometric thresholds.
-- The accepted cases have normalized RMS deviations from approximately `1.7e-5` to `5.3e-4`.
-- The accepted cases have normalized maximum deviations below approximately `1.34e-3`.
+- The accepted cases have normalized RMS deviations from approximately $1.7e-5$ to 5.3e-4$.
+- The accepted cases have normalized maximum deviations below approximately $1.34e-3$.
 
 A representative accepted case is:
 
@@ -101,7 +101,7 @@ The results support the weak-field result of the paper: under the cusp condition
 
 However, these results do not prove that finite-magnetic-field trajectories are exact analytic hypocycloids. The finite deviations are expected because the full equations contain higher-order corrections beyond the weak-field approximation.
 
-The quantity `O(e^2B^2)` is a theoretical order estimate; it is not treated as a measured geometric error.
+The quantity $O(e^2B^2)$ is a theoretical order estimate; it is not treated as a measured geometric error.
 
 ## Reproducibility
 
